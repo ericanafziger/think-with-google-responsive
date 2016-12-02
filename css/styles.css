@@ -204,6 +204,9 @@ body {
   .row .half-size img {
     height: 110px;
   }
+  .text-container h5 {
+    margin-top: 0px;
+  }
   .row .half-size {
     height: 110px;
   }
