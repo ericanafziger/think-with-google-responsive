@@ -2,26 +2,29 @@ body {
   background-color: #E0E0E0;
 }
 .navbar {
-  padding: 5px;
+  padding: 10px;
   background: #FFF;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 0;
 }
 .row img {
   max-width: 100%;
   display: block;
-  -webkit-transition: all 500ms ease; /* Safari and Chrome */
-  -moz-transition: all 500ms ease; /* Firefox */
+  -webkit-transition: all 500ms ease-in-out; /* Safari and Chrome */
+  -moz-transition: all 500ms ease-in-out; /* Firefox */
   -ms-transition: all 500ms ease; /* IE 9 */
   -o-transition: all 500ms ease; /* Opera */
   transition: all 500ms ease;
+}
+.row img:hover {
 }
 .container-fluid:first-child {
   background: white;
 }
 .container-fluid:first-child img {
-  max-width: 200px;
+  max-width: 186px;
 }
 .container-fluid {
   max-width: 1440px;
@@ -31,19 +34,20 @@ body {
   margin-right: auto;
 }
 .row .full-size {
-  height: 817.33px;
+  height: 688px;
 }
 .row .full-size img {
-  height: 817.33px;
+  height: 688px;
   max-width: 100%;
   object-fit: cover;
 }
 .row .half-size {
-  height: 408.665px;
+  height: 344px;
 }
 .row .half-size img {
-  height: 75%;
-  max-width: 100%;
+  height: 70%;
+  width: 100%;
+  margin-right: 0;
   object-fit: cover;
   object-position: right;
 }
@@ -58,20 +62,31 @@ body {
  -o-transform:scale(1.08); /* Opera */
   transform:scale(1.08);
 }
-.row:first-child {
-  border: 3px dotted blue;
-}
 .expanded {
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 .text-container {
-  height: 25%;
+  height: 30%;
   position: relative;
   bottom: 0;
   color: white;
-  padding: 10px 20px 2px 20px;
+  padding: 15px 20px 2px 20px;
+}
+.text-container h2 {
+  font-weight: 200;
+}
+.text-container h5 {
+  font-weight: 200;
+}
+.text-container h6 {
+  margin-top: 50px;
+  font-weight: lighter;
+}
+.text-container p {
+  font-size: 0.8em;
+  font-weight: 100;
 }
 .seagreen {
   background: #009688;
@@ -79,10 +94,34 @@ body {
 .googleBlue {
   background: #0D47A1;
 }
-.text-container h5 {
-  font-weight: 300;
+.darkgrey {
+  background: #263238;
 }
-.text-container p {
-  font-size: 0.8em;
-  font-weight: 100;
+.floating {
+  position: absolute;
+  width: 304px;
+  height: 300px;
+  left: 30px;
+  bottom: 30px;
+}
+@media screen and (max-width: 992px){
+  .row .full-size {
+    height: 412.8px;
+  }
+  .row .full-size img {
+    height: 412.8px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .row .half-size {
+    height: 206.4;
+  }
+  .row .half-size img {
+    height: 70%;
+    width: 100%;
+    margin-right: 0;
+    object-fit: cover;
+    object-position: right;
+  }
 }
