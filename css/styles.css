@@ -1,8 +1,11 @@
 body {
   background-color: #E0E0E0;
+  font-family: 'Roboto', sans-serif;
 }
 .navbar {
-  padding: 5px;
+  padding: 0px;
+  height: 64px;
+  overflow: hidden;
   background: #FFF;
   max-width: 1440px;
   margin-left: auto;
@@ -10,9 +13,21 @@ body {
   border-radius: 0;
   margin-bottom: 0;
 }
-.navbar-nav > li > a {
-  line-height: 30px;
+.navbar-default .navbar-nav > .dropdown > a {
+  padding-right: 0px;
 }
+.navbar-default .navbar-nav > li > a {
+  height: 64px;
+  line-height: 30px;
+  font-size: 1.1em;
+  color: #616161;
+  font-weight: 300;
+  padding-left: 14px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background-color: #F5F5F5;
+  color: #616161;
+  }
 .dropdown-menu {
   top: 0;
   overflow: auto;
@@ -22,6 +37,15 @@ body {
   font-size: 1.2em;
   height: 50px;
 }
+.navbar-default .navbar-nav > .search > a {
+  font-size: 18px;
+  padding-right: 30px;
+  padding-left: 0px;
+}
+.navbar-default .navbar-nav > .search > a:hover, .navbar-default .navbar-nav > .search > a:focus {
+  background-color: white;
+  color: black;
+  }
 .row img {
   max-width: 100%;
   display: block;
@@ -130,7 +154,12 @@ body {
   left: 30px;
   bottom: 30px;
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1011px) {
+  .hidden-xs {
+    /*display: none;*/
+  }
+}
+@media screen and (max-width: 991px){
   .row .full-size {
     height: 412.8px;
   }
@@ -150,6 +179,9 @@ body {
     object-fit: cover;
     object-position: right;
   }
+  .text-container h5 {
+    margin-top: 0px;
+  }
 }
 @media screen and (max-width: 767px) {
   .text-container h5 {
@@ -163,6 +195,9 @@ body {
     z-index: 3;
     width: 128px;
     height: 96px;
+  }
+  .text-container h5 {
+    margin-top: 5px;
   }
   .row .half-size {
     height: 96px;
@@ -187,7 +222,7 @@ body {
       width: 70%;
       float: left;
       background: none;
-    }
+  }
   .floating {
     position: absolute;
     width: 95%;
@@ -204,9 +239,7 @@ body {
   .row .half-size img {
     height: 110px;
   }
-  .text-container h5 {
-    margin-top: 0px;
-  }
+
   .row .half-size {
     height: 110px;
   }
