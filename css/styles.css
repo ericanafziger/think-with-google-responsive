@@ -2,9 +2,17 @@ body {
   background-color: #E0E0E0;
   font-family: 'Roboto', sans-serif;
 }
+.container-fluid {
+  max-width: 1440px;
+  margin: 0;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ------------------------------Navbar Styling------------------------------ */
 .navbar {
   padding: 0px;
-  height: 64px;
+  height: 64px; /* height of navbar */
   background: #FFF;
   max-width: 1440px;
   margin-left: auto;
@@ -12,8 +20,17 @@ body {
   border-radius: 0;
   margin-bottom: 0;
 }
+.container-fluid:first-child {
+  background: white; /*navbar background color*/
+}
+.container-fluid:first-child img {
+  max-width: 186px; /* logo size */
+}
 .navbar-default .navbar-nav > .dropdown > a {
   padding-right: 0px;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover, .navbar-default .navbar-nav > .dropdown > a:focus {
+  background: white;
 }
 .navbar-default .navbar-nav > li > a {
   line-height: 30px;
@@ -45,6 +62,7 @@ body {
   background-color: white;
   color: black;
   }
+/* ------------------------------Content Styling------------------------------ */
 .row img {
   max-width: 100%;
   display: block;
@@ -67,7 +85,7 @@ body {
   -o-transition: all 500ms ease; /* Opera */
   transition: all 500ms ease;
 }
-.zoom:hover {
+.zoom:hover {           /*zooms images on hover*/
   max-width: 100%;
   height: auto;
   opacity: 0.9;
@@ -76,19 +94,6 @@ body {
   -ms-transform:scale(1.08); /* IE 9 */
   -o-transform:scale(1.08); /* Opera */
   transform:scale(1.08);
-}
-.container-fluid:first-child {
-  background: white;
-}
-.container-fluid:first-child img {
-  max-width: 186px;
-}
-.container-fluid {
-  max-width: 1440px;
-  margin: 0;
-  background: white;
-  margin-left: auto;
-  margin-right: auto;
 }
 .row .full-size {
   height: 688px;
@@ -115,6 +120,7 @@ body {
   padding: 0;
   overflow: hidden;
 }
+/* -----------------------------text-container Styling---------------------------- */
 .text-container {
   height: 30%;
   position: relative;
@@ -130,9 +136,10 @@ body {
   font-size: 1.4em;
 }
 .text-container h6 {
-  margin-top: 40px;
-  font-size: 1.2em;
-  font-weight: 100;
+  margin-top: 35px;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: lighter;
 }
 .text-container p {
   font-weight: 100;
@@ -152,12 +159,10 @@ body {
   height: 300px;
   left: 30px;
   bottom: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
-@media screen and (max-width: 1011px) {
-  .hidden-xs {
-    /*display: none;*/
-  }
-}
+/* ------------------------------Media Queries------------------------------ */
 @media screen and (max-width: 991px){
   .row .full-size {
     height: 412.8px;
