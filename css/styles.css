@@ -24,6 +24,7 @@ body {
   background: white; /*navbar background color*/
 }
 .container-fluid:first-child img {
+  margin-left: 10px;
   max-width: 186px; /* logo size */
 }
 .navbar-default .navbar-nav > .first > a {
@@ -38,12 +39,15 @@ body {
   font-size: 1.1em;
   color: #616161;
   font-weight: 300;
-  padding-left: 14px;
+  padding-left: 10px;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   background-color: #F5F5F5;
   color: #616161;
-  }
+}
+.dropdown-menu {
+  padding: 0px 0px;
+}
 .first .dropdown-menu {
   top: 0;
   overflow: auto;
@@ -57,9 +61,21 @@ body {
   border: none;
   background: #4d5659;
 }
+.second .dropdown-menu a {
+  padding-top: 12px;
+  margin-top: 0;
+}
+.second .dropdown-menu a:hover {
+  background: #263238;
+  color: white;
+}
 .navbar-default .navbar-nav > .second > a:hover, .navbar-default .navbar-nav > .second > a:focus {
   background-color: #4d5659;
   color: white;
+}
+.navbar-default .navbar-nav > .second > a:hover + .dropdown-menu {
+  display: block;
+  visibility: visible;
 }
 .second .dropdown-menu a {
   color: white;
@@ -69,7 +85,7 @@ body {
   font-size: 1.2em;
   height: 50px;
 }
-.navbar-default .navbar-nav > .search > a {
+.navbar-default .hidden-sm > .search > a {
   font-size: 18px;
   padding-right: 30px;
   padding-left: 0px;
@@ -77,9 +93,26 @@ body {
 .navbar-default .navbar-nav > .search > a:hover, .navbar-default .navbar-nav > .search > a:focus {
   background-color: white;
   color: black;
-  }
-.navbar-default .navbar-nav > .menu > a:hover, .navbar-default .navbar-nav > .menu > a:focus {
-  background-color: white;
+}
+.navbar-default .hidden-md > .search > a {
+  font-size: 18px;
+  padding-right: 0px;
+}
+.phone-nav {
+  position: absolute;
+  top: 10px;
+  list-style: none;
+  right: 25px;
+}
+.phone-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.phone-nav a {
+  color: #666;
+}
+.phone-nav a:hover {
+  color: #555;
 }
 /* ------------------------------Content Styling------------------------------ */
 .top-row img {
@@ -125,7 +158,12 @@ body {
 }
 .row .half-size {
   height: 344px;
-  background: #000;
+}
+.row .half-size:nth-of-type(1) {
+  background: #0D47A1;
+}
+.row .half-size:nth-of-type(2) {
+  background: #009688;
 }
 .row .half-size img {
   height: 70%;
@@ -295,6 +333,7 @@ body {
     width: 30%;
   }
 }
+
 @media screen and (max-width: 420px) {
   .row .half-size img {
     height: 110px;
