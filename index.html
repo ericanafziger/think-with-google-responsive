@@ -3,21 +3,33 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel='shortcut icon' type='image/x-icon' href='img/google-favicon.png'>
     <title>Think with Google: Marketing</title>
   </head>
   <body>
-    <div class="navbar navbar-default">
+    <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-            <img src="img/btn-compact-nav.svg" alt="toggle navigation">
-          </button> -->
           <a class="navbar-brand" href="#"><img src="img/logo.png" alt="google think logo"></a>
-        </div><!--end of navbar header-->
-
+        </div>
+    
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">United States <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
       </div><!--end of navbar container-fluid-->
-    </div><!--end of navbar-->
+    </nav>
 
     <!--START OF PAGE CONTENT-->
     <div class="container-fluid">
@@ -27,7 +39,7 @@
           <div class="text-container darkgrey floating">
             <h2>Shoppers Gobble Up In-Store Black Friday Deals on Mobile</h2>
             <p>Holiday - Mobile</p>
-            <h6>Store foot traffic surged on Black Friday.</h6>
+            <h6 class="hidden-xs-down">Store foot traffic surged on Black Friday.</h6>
           </div>
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 expanded">
@@ -46,7 +58,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+
+      </div><!--end of row 1-->
+    </div><!--end of container-fluid-->
   </body>
 </html>
