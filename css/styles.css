@@ -26,7 +26,7 @@ body {
 .container-fluid:first-child img {
   max-width: 186px; /* logo size */
 }
-.navbar-default .navbar-nav > .dropdown > a {
+.navbar-default .navbar-nav > .first > a {
   padding-right: 0px;
 }
 .navbar-default .navbar-nav > .dropdown > a:hover, .navbar-default .navbar-nav > .dropdown > a:focus {
@@ -44,10 +44,26 @@ body {
   background-color: #F5F5F5;
   color: #616161;
   }
-.dropdown-menu {
+.first .dropdown-menu {
   top: 0;
   overflow: auto;
   height: 490px;
+}
+.second .dropdown-menu {
+  top: 62px;
+  width: 180px;
+  height: 400px;
+  left: 0px;
+  border: none;
+  background: #4d5659;
+}
+.navbar-default .navbar-nav > .second > a:hover, .navbar-default .navbar-nav > .second > a:focus {
+  background-color: #4d5659;
+  color: white;
+}
+.second .dropdown-menu a {
+  color: white;
+  font-weight: lighter;
 }
 .dropdown-menu a {
   font-size: 1.2em;
@@ -62,6 +78,9 @@ body {
   background-color: white;
   color: black;
   }
+.navbar-default .navbar-nav > .menu > a:hover, .navbar-default .navbar-nav > .menu > a:focus {
+  background-color: white;
+}
 /* ------------------------------Content Styling------------------------------ */
 .top-row img {
   max-width: 100%;
