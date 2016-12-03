@@ -9,6 +9,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.container-fluid:nth-of-type(1) {
+  position: relative;
+}
 /* ------------------------------Navbar Styling------------------------------ */
 .navbar {
   padding: 0px;
@@ -189,7 +192,7 @@ body {
 .row-content:nth-of-type(2) img  {
   margin-top: 2%;
 }
-.row-content:nth-of-type(5)  {
+.row-content:nth-of-type(6)  {
   margin-bottom: 2%;
 }
 /* -----------------------------text-container Styling---------------------------- */
@@ -249,6 +252,7 @@ body {
 .content-container a {
   color: #2196F5;
 }
+/* ------------------------------Footer Styling------------------------------ */
 .footer {
   background: #37474F;
   color: white;
@@ -291,6 +295,15 @@ body {
 .last-footer a:hover {
   text-decoration: none;
   color: #4285F4;
+}
+/* ------------------------------Sidebar Styling------------------------------ */
+.sidebar {
+  position: absolute;
+  top: 750px;
+  right: 0px;
+  background: #F5F5F5;
+  height: 856px;
+  width: 450px;
 }
 /* ------------------------------Media Queries------------------------------ */
 @media screen and (max-width: 991px){
