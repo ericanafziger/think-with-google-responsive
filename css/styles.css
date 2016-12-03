@@ -53,6 +53,7 @@ body {
   overflow: auto;
   height: 490px;
 }
+/*--------------------right dropdown-----------------------*/
 .second .dropdown-menu {
   top: 62px;
   width: 180px;
@@ -188,8 +189,8 @@ body {
 .row-content:nth-of-type(2) img  {
   margin-top: 2%;
 }
-.row-content:last-of-type  {
-  margin-bottom: 5%;
+.row-content:nth-of-type(5)  {
+  margin-bottom: 2%;
 }
 /* -----------------------------text-container Styling---------------------------- */
 .text-container {
@@ -247,6 +248,49 @@ body {
 }
 .content-container a {
   color: #2196F5;
+}
+.footer {
+  background: #37474F;
+  color: white;
+  padding: 20px 35px 25px 35px;
+  height: 159.59px;
+}
+.footer h3 {
+  font-weight: lighter;
+  font-size: 1.3em;
+}
+.footer button {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  background: #4285F4;
+}
+.last-footer {
+  position: relative;
+  background: #263238;
+  height: 72px;
+}
+.last-footer img {
+  position: absolute;
+  top: 25px;
+  left: 33px;
+  width: 71px;
+}
+.last-footer ul {
+  position: absolute;
+  left: 78px;
+  top: 25px;
+}
+.last-footer li {
+  display: inline-block;
+  margin-left: 25px;
+}
+.last-footer a {
+  color: white;
+  font-weight: lighter;
+}
+.last-footer a:hover {
+  text-decoration: none;
+  color: #4285F4;
 }
 /* ------------------------------Media Queries------------------------------ */
 @media screen and (max-width: 991px){
@@ -343,7 +387,6 @@ body {
     width: 30%;
   }
 }
-
 @media screen and (max-width: 425px) {
   .row .half-size img {
     height: 110px;
