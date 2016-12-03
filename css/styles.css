@@ -56,9 +56,9 @@ body {
   overflow: auto;
   height: 490px;
 }
-/*--------------------right dropdown-----------------------*/
+/*--------------------second dropdown menu-----------------------*/
 .second .dropdown-menu {
-  top: 62px;
+  top: 64px;
   width: 180px;
   height: 400px;
   left: 0px;
@@ -73,13 +73,28 @@ body {
   background: #263238;
   color: white;
 }
+.dropdown:hover .main-target {
+  background: #4d5659;
+  color: white;
+}
 .navbar-default .navbar-nav > .second > a:hover, .navbar-default .navbar-nav > .second > a:focus {
   background-color: #4d5659;
   color: white;
 }
-.navbar-default .navbar-nav > .second > a:hover + .dropdown-menu {
+.dropdown-menu:hover {
   display: block;
-  visibility: visible;
+}
+a.main-target  {
+  background: white;
+}
+
+.dropdown-menu a {
+  display: block;
+}
+.navbar-default .navbar-nav > .second > a:hover + .dropdown-menu {
+  border-radius: 0;
+  display: block;
+  /*visibility: visible;*/
 }
 .second .dropdown-menu a {
   color: white;
