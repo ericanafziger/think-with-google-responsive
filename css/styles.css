@@ -106,7 +106,10 @@ body {
 }
 .phone-nav li {
   display: inline-block;
-  margin-right: 20px;
+}
+.phone-nav li:last-of-type img{
+  /*background: red;*/
+  margin-left: 0;
 }
 .phone-nav a {
   color: #666;
@@ -311,11 +314,11 @@ body {
     background: #009688;
   }
   .row .half-size .text-container {
-      bottom: 100px;
-      left: 120px;
-      width: 70%;
-      float: left;
-      background: none;
+    bottom: 100px;
+    left: 120px;
+    width: 70%;
+    float: left;
+    background: none;
   }
   .floating {
     position: absolute;
@@ -324,6 +327,10 @@ body {
     left: 50%;
     transform: translate(-50%,0);
     bottom: 3%;
+  }
+  .floating h2 {
+    margin-top: 9px;
+    width: 80%;
   }
   .text-container h2 {
     font-size: 1.5em;
@@ -337,11 +344,10 @@ body {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   .row .half-size img {
     height: 110px;
   }
-
   .row .half-size {
     height: 110px;
   }
@@ -355,5 +361,8 @@ body {
     width: 30%;
     height: 30%;
     object-fit: cover;
+  }
+  .floating h2 {
+    width: 90%;
   }
 }
