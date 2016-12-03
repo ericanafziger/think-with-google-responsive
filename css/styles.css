@@ -189,7 +189,7 @@ body {
   margin: 1% 2%;
   float: left;
 }
-.row-content:nth-of-type(2) img  {
+.row-content:nth-of-type(1) img  {
   margin-top: 2%;
 }
 .row-content:nth-of-type(6)  {
@@ -299,10 +299,10 @@ body {
 /* ------------------------------Sidebar Styling------------------------------ */
 .sidebar {
   position: absolute;
-  top: 5%;
+  top: 3%;
   right: 0px;
   background: #F5F5F5;
-  height: 95%;
+  height: 97%;
   width: 30%;
 }
 /* ------------------------------Media Queries------------------------------ */
