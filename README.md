@@ -5,7 +5,7 @@
 
 ## Setup/Installation Requirements
 
-* _View at: [https://ericanafziger.github.io/think-with-google-responsive/]https://ericanafziger.github.io/think-with-google-responsive/)_
+* _View at: [https://ericanafziger.github.io/think-with-google-responsive/](https://ericanafziger.github.io/think-with-google-responsive/)_
 * _Or clone this repository from GitHub_
 * _Run cd think-with-google-responsive in terminal_ 
 * _Now index.html can be viewed in the browser_
