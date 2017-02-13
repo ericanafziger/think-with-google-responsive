@@ -20,7 +20,7 @@ _Find the developers on GitHub:  [Erica](https://github.com/ericanafziger)_
 
 ## Technologies Used
 
-_CSS, HTML, Bootstrap_
+_CSS, HTML, Bootstrap, JavaScript_
 
 ### License
 
